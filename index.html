@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./external.js" defer></script>
+    <title>Final Project</title>
+</head>
+<body>
+    <div id="container">
+        <header id="head">
+            <h1 class="header">Brick and "Porter" Brewing</h1>
+        </header>
+        <div class="cartButton">
+            <input id="cartButton" class="cartButton" type="image" type="button" onclick="openModal()" src="./image/cart2.png">
+        </div>
+        <div id="topBox">
+            <div class="productImageBox">
+                <img id="productImage" src="./image/hazy_ipa.jpg" alt="Hazy IPA">
+            </div>
+            <div class="productInfo">
+                <div class="productTitle">
+                    <div class="productDetails">
+                        <h1 class="productName">Lighter than a Daisy Pilsner</h1>
+                        <h3 class="listPrice">Price: $9.99</h3>
+                    </div>
+                    <div class="buttons">
+                        <button id="buttonAffect" onclick="addToCart()">Add To Cart</button>
+                        <button id="buttonAffect" onclick="document.getElementById('productReviews').scrollIntoView();">Go To Reviews/Comments</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomBox">
+            <div>
+                <h4>Product Description</h4>
+                <ul id="productDescription">
+                    <li>Delicious</li>
+                    <li>Nutritious</li>
+                    <li>Filled with the 11 secret herbs and spices</li>
+                </ul>
+                <h4>Product Reviews</h4>
+                <p id="productReviews">
+                    <div>
+                        "I am too drunk to taste this chicken! ~ Colonel Sanders"
+                    </div>
+                    <div>
+                        "If you didn't try it first, you're last. ~ Ricky Bobby"
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="added-to-shopping-cart">
+        <div class="modal" id="modal">
+            <div id="modal-content">
+                <span id="close" onclick="closeModal()">x</span>
+                <h5>Shopping Cart Contents</h5>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

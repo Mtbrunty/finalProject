@@ -1,0 +1,228 @@
+/* Main page setup */
+
+body {
+  
+  background-color: rgb(97,55,1);
+  display: flex;
+  justify-content: center;
+}
+
+#head {
+  background-position: 0 auto;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  height: 75px;
+  min-width: auto;
+  color: navy;
+  text-shadow: black 0 0 .2em;;
+  margin: 0 auto;
+  /* padding-bottom: 15px; */
+}
+
+#head > h1 {
+  font-size: xx-large;
+  font-family: sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  color: navy;
+}
+
+/* Main data layout */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  padding: 1%;
+  height: 80%;
+  width: 80%;
+}
+
+/* Navigation Menu/Buttons Styling */
+
+#navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  font-size: medium;
+}
+
+/* Shopping Cart Button */
+
+.cartButton {
+  height: 30%;
+  width: 30%;
+  text-align: center;
+  position: relative;
+  right: -57%;
+  padding: 1%;
+  border-radius: 100% 100% 100% 100%;
+  box-shadow: inset;
+}
+
+/* Layout Features */
+
+#topBox {
+  display: flex;
+}
+
+
+.productImageBox {
+  border: 2px solid gold;
+  border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#productImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 15%; 
+}
+
+.productInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content:space-between;
+}
+
+.productDetails {
+  width: 100%;
+}
+
+.productName {
+  font-size: xx-large;
+  margin-bottom: 0%;
+  color: navy;
+}
+
+
+/* Button Styling and Affects */
+
+.buttons {
+  display: flex;
+  justify-content:space-around;
+  padding: 10%;
+}
+
+#buttonAffect:hover,
+#buttonAffect:hover {
+  background-color: palegoldenrod;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Font Styling */
+
+h1 {
+  font-size: large;
+  margin: 0%;
+  padding: 0%;
+}
+
+h2 {
+  font-family: fantasy;
+  font-size: large;
+  font-weight: 400;
+  margin: 0%;
+  padding: 0%;
+}
+
+h3 {
+  font-family: fantasy;
+  font-size: large;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0%;
+  padding: 0%;
+}
+
+h4 {
+  font-family:fantasy;
+  font-size: large;
+  margin: 0%;
+  padding: 0%;
+}
+
+h5 {
+  font-family: fantasy;
+  font-size: xx-large;
+  margin: 0%;
+  padding: 0%;
+}
+
+li {
+  font-family:fantasy;
+}
+
+.listPrice {
+  color: red;
+}
+
+.priceSavings {
+  color: blue;
+}
+
+/* Modal (background) */
+.modal {
+  display: block;
+  width: 90%;
+  height: 80%;
+  position:fixed;
+  top: 10%;
+  left: 9%;
+  visibility: hidden; /*Hidden by default */
+}
+
+/* Modal Content Box */
+
+#modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  background-color: palegoldenrod;
+  border: 3px solid saddlebrown;
+  overflow: scroll;
+}
+
+
+/* The Close Button */
+
+#close {
+  align-self: flex-end;
+  color: black;
+  font-size: 20px;
+  
+}
+
+#close:hover,
+#close:focus {
+  color: #5cf;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Shopping Cart Data Added */
+
+.shoppingCartItem {
+  background-color: palegoldenrod;
+  display: inline-flex;
+  justify-content:space-around;
+  font-size: xx-large;
+
+}
+
+#cartImage {
+  max-height: 10px;
+  max-width: 10px;
+  border-radius: 15%;
+  border: 2px solid black;
+}
